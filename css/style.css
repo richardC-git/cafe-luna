@@ -29,5 +29,5 @@ h1, h2, h3 {
   border-radius: 16px;
   padding: 20px; 
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  border: 1px solid rgba(120,79,65,0.12);
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
