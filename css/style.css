@@ -1,9 +1,23 @@
 /* CafeLuna Project - Starter Styles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Lato:wght@400;700&display=swap');
+
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: #B7AA99;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Add your styles here */
+header {
+    background: #784F41;
+}
+
+button {
+    background: #F0b67F;
+    color: #784F41;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
