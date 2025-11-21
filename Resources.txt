@@ -1,0 +1,39 @@
+Index.html (And style.css)
+
+Resources Used:
+
+www.pexels.com for ALL stock images
+
+https://www.w3schools.com/css/css3_flexbox.asp
+
+https://www.w3schools.com/css/css_grid.asp
+
+https://www.w3schools.com/css/css3_mediaqueries.asp
+
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+
+ChatGPT
+Page Structure:
+    Talk me through what Flex Boxes are.
+
+    Talk me through what grid layouts are.
+
+    Talk me through what mediaqueries are for.
+
+Logo Generation:
+    Can you generate a white on bole(784F41) minimalist latte image to use as a nav bar logo?
+
+    Almost perfect, can you add a "Moon" or "Luna" type element? Maybe in the actual latte art?
+
+    Can you make the bole transparent instead?
+
+Hero Image:
+    What is a hero image? How do I implement it?
+
+Content:
+    Give me some ideas for what would be on a cafe home page.
+
+Sanity Check:
+    Look over my HTML and CSS to look for any redundancies, broken links.
+
+    Complete a validation check to ensure all functionality makes sense.

@@ -3,31 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <title>Café Luna – Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-<header>
+
+<!-- Navigation Bar -->
+<header class="site-header">
   <div class="container nav">
-    <a class="brand" href="#">Café Luna</a>
+    <div class="brand-wrap">
+      <img src="images/logo.png" alt="Cafe Luna logo" class="nav-logo nav-logo-large">
+      <a class="brand" href="#">Café Luna</a>
+    </div>
 
     <nav>
       <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#About">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    
   </div>
 </header>
-    <!-- Main Content -->
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit est, velit fusce quisque felis elementum rhoncus lacinia donec orci, suspendisse dictumst ad cubilia nascetur commodo id. Curabitur class proin mattis maecenas non pulvinar nulla risus, habitant eget ut primis commodo interdum nam donec lectus, sociis quis elementum litora et tellus mus. Mus tincidunt lacus cras ridiculus volutpat morbi, inceptos torquent faucibus cubilia class arcu, elementum pharetra vivamus mattis malesuada.
 
-Lobortis faucibus consequat quisque malesuada fames ullamcorper sapien non sem, porta tempus morbi nam interdum quam congue pharetra, cubilia massa pulvinar volutpat class dictumst molestie vehicula. Donec eu vestibulum phasellus eros sodales primis mollis ad, libero facilisi cubilia tempus fringilla arcu risus aptent, urna magnis placerat nulla massa netus per. Mus aptent nam ridiculus neque donec nullam torquent class erat accumsan proin, ullamcorper at pulvinar tellus dignissim volutpat posuere nascetur in lacus metus phasellus, mauris hendrerit purus nulla eleifend ut sodales mollis molestie libero.</p>
-=======
-    <!-- Test -->
-    <!-- Footer -->
+<main>
+
+<!-- Hero Image -->
+<section id="hero">
+  <figure class="hero-figure">
+    <img src="images/interior.jpg" alt="Café interior" class="card-image hero-image">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1>Welcome to Café Luna</h1>
+        <p>A cozy space for fresh coffee, warm pastries, and slow mornings.</p>
+        <a href="menu.html" class="btn">View Our Menu</a>
+      </div>
+    </div>
+  </figure>
+</section>
+
+<!-- Customer Favourites Section -->
+<section id="featured" class="section">
+  <div class="container">
+    <header>
+      <h2>Customer Favourites</h2>
+    </header>
+
+    <div class="cards-grid mt-16">
+      <article class="card">
+        <figure>
+            <img src="images/latte.jpg" alt="House Latte" class="card-image">
+          </figure>
+        <h3>House Latte</h3>
+        <p>Our signature blend — smooth, rich, and crafted with care.</p>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="images/croissant.jpg" alt="Fresh Butter Croissant" class="card-image">
+        </figure>
+        <h3>Fresh Butter Croissant</h3>
+        <p>Flaky, warm, and baked in-house every morning.</p>
+      </article>
+
+    </div>
+
+    <!-- Seasonal item separated -->
+    <aside class="full-width-card card mt-24" role="complementary">
+      <figure>
+        <img src="images/seasonal.jpg" alt="Seasonal Items" class="card-image">
+      </figure>
+      <h3>Seasonal Items</h3>
+      <p>Ask us about our current seasonal creations!</p>
+    </aside>
+  </div>
+</section>
+
+<!-- Link to About Page -->
+<section id="about-preview" class="section">
+  <div class="container">
+    <article class="card">
+
+      <header>
+        <h2>About Café Luna</h2>
+      </header>
+
+      <p>
+        Café Luna is a small neighbourhood café focused on simple, handcrafted drinks and a welcoming atmosphere. We believe in good conversation, warm pastries, and a space that feels like home.
+      </p>
+      <a href="about.html" class="btn">Learn More</a>
+
+    </article>
+  </div>
+</section>
+
+<!-- Location & Hours -->
+<section id="visit" class="section mb-40">
+    <div class="container">
+      <article class="card">
+        <header>
+          <h2>Stop By Anytime</h2>
+        </header>
+
+        <div class="visit-grid">
+          <div class="visit-cta">
+            <p>We can’t wait to serve you your next favourite cup.</p>
+            <a href="menu.html" class="btn">Explore the Menu</a>
+          </div>
+
+          <div class="visit-details">
+            <dl>
+              <dt>Hours</dt>
+              <dd>
+                Mon–Fri: 7:00am – 5:00pm<br>
+                Sat–Sun: 8:00am – 4:00pm
+              </dd>
+            </dl>
+
+            <address>
+              123 Sample Street<br>
+              Vancouver, BC
+            </address>
+          </div>
+        </div>
+      </article>
+    </div>
+</section>
+
+</main>
+
 </body>
 </html>
