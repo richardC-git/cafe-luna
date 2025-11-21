@@ -1,39 +1,72 @@
-/* CafeLuna Project - Starter Styles */
-
-/*Import Quicksand and Lato as baseline fonts*/
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Lato:wght@400;700&display=swap');
 
-/*Set colors as variables*/
+
+/* Theme variables */
 :root {
-    --khaki: #B7AA99;
-    --bole:  #784F41;
-    --fawn:  #F0B67F;
+  --khaki: #B7AA99;
+  --bole:  #784F41;
+  --fawn:  #F0B67F;
 }
 
-/*Set fall-back font incase font is not defined*/
+
+/* Base document settings */
 html {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--khaki);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* improves readable rhythm */
+}
+
+p {
+  margin: 0 0 1rem 0; /* consistent paragraph spacing */
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
 }
 
 
-/*Nav Bar Styling*/
-/*Header - Themed color palette*/
-header {
-    position: sticky;
-    top: 0;
-    background: var(--bole);
-    color:#fff;
-    z-index: 10;
+/* Navigation Bar */
+header.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bole);
+  color: #fff;
+  z-index: 10;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 6px 0 4px 0;
 }
 
-/* Cafe Luna Link - white on brown, bolded */
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-logo {
+  height: 38px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.nav-logo-large {
+  height: 44px;
+}
+
 .brand {
   color: white;
   text-decoration: none;
@@ -41,7 +74,6 @@ header {
   font-size: 1.2rem;
 }
 
-/* Navigation links text base styling */
 .nav-links {
   list-style: none;
   display: flex;
@@ -50,7 +82,6 @@ header {
   padding: 0;
 }
 
-/* Nav Bar Button styling */
 .nav a {
   color: white;
   text-decoration: none;
@@ -59,28 +90,31 @@ header {
   border-bottom: 2px solid transparent;
 }
 
-/* Button behavior */
-.nav a:hover,
-.nav a:focus {
+.nav a:hover, .nav a:focus {
   border-bottom-color: var(--fawn);
 }
 
-/*Body - Themed color palette, Quicksand font generalization*/
-body {
-    background-color: var(--khaki);
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-/*Container - Ensures page is confined and padded from the outside for consistency across content
-Use on nearly everything*/
+/* Container class for consistent layout spacing */
 .container {
-    width:min(1000px, 92vw);
-    margin:0 auto;
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-/*Button - Themed buttons - Use for anchors (site navigation)*/
+
+/* Utility spacing classes */
+.section {
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mb-40 { margin-bottom: 40px; }
+
+
+/* Buttons */
 .btn {
   display: inline-block;
   background: var(--fawn);
@@ -91,19 +125,176 @@ Use on nearly everything*/
   font-weight: 600;
 }
 
-/*Headers - Ensure font alignment across headers*/
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
+/* Hero Image */
+.hero-figure {
+  position: relative;
+  margin: 0;
 }
 
-/*Card - Element boxes; white centered box, smoothed corners*/
+.hero-figure .hero-image {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.28) 100%);
+  border-radius: 12px;
+}
+
+.hero-overlay h1 {
+  margin: 0 0 6px 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.hero-overlay p {
+  margin: 0 0 8px 0;
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  .hero-figure .hero-image { height: 420px; }
+  .hero-overlay { padding: 36px; }
+  .hero-overlay h1 { font-size: 2.4rem; }
+}
+
+/* Cards and content blocks (featured, about, visit) */
 .card {
   background: white;
   border-radius: 16px;
-  padding: 20px; 
+  padding: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 8px solid rgba(0,0,0,0.125);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Images used inside cards */
+.card-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.cards-grid .card .card-image { height: 200px; }
+
+@media (min-width: 700px) {
+  .cards-grid .card .card-image { height: 240px; }
 }
 
 
+/* Grid for featured items ------------------------------------ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
 
+.cards-grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make images in the grid fill more of the card and cover */
+.cards-grid .card .card-image {
+  height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cards-grid .card h3 {
+  margin: 12px 0 8px 0;
+}
+
+/* Seasonal full-width card */
+.full-width-card { width: 100%; }
+
+.full-width-card .card-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+
+/* Visit grid: details + call-to-action aligned within the card */
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .visit-grid {
+    grid-template-columns: 1fr;
+  }
+  .visit-cta { 
+    text-align: left;
+    margin-top: 12px;
+  }
+}
+
+dl { 
+  font-weight: 700; 
+  margin-top: 0; }
+
+.visit-cta {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.visit-details {
+  text-align: left;
+  border-left: 1px solid rgba(0,0,0,0.06);
+  padding-left: 20px;
+  align-items: flex-start;
+}
+
+.visit-grid > * {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .visit-details { 
+    text-align: left; 
+    border-left: none; 
+    padding-left: 0; }
+
+  .visit-grid > * { 
+    min-height: 0; 
+    align-items: flex-start; 
+  }
+}
+
+.visit-cta .btn { 
+  align-self: flex-start; 
+  width: auto;
+  margin-top: 8px; }
+  
+.visit-cta p, .visit-details p { 
+  margin: 0 0 8px 0; 
+}
