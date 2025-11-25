@@ -12,6 +12,12 @@ https://www.w3schools.com/css/css3_mediaqueries.asp
 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 
+https://www.w3schools.com/css/css_grid_container.asp
+
+https://www.w3schools.com/css/css3_flexbox_container.asp
+
+https://www.giantfocal.com/march-documentation/margin
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Relationship_with_other_layout_methods
 
 developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Introduction
@@ -23,6 +29,10 @@ Page Structure:
     Talk me through what grid layouts are.
 
     Talk me through what mediaqueries are for.
+
+    How can I ensure consistent spacing on elements?
+
+    What are some example margin classes?    
 
 Logo Generation:
     Can you generate a white on bole(784F41) minimalist latte image to use as a nav bar logo?
@@ -42,6 +52,8 @@ Sanity Check:
 
     Complete a validation check to ensure all functionality makes sense.
 
+    Look through my CSS and look for any classes that can be consolidated into less classes, for less clutter.
+    
 About page prompts:
 
 What do about pages for cafes typically look like? What kind of content, theme and tone is typical? What features and functionality is expected? Explain the aesthetic principles and design practices that a web developer designing and implementing an about page for a cafe would implement.
