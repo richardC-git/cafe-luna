@@ -1,0 +1,344 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Lato:wght@400;700&display=swap');
+
+
+/* Theme variables */
+:root {
+  --khaki: #B7AA99;
+  --bole:  #784F41;
+  --fawn:  #F0B67F;
+}
+
+
+/* Base document settings */
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--khaki);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* improves readable rhythm */
+}
+
+p {
+  margin: 0 0 1rem 0; /* consistent paragraph spacing */
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Navigation Bar */
+header.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bole);
+  color: #fff;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0 4px 0;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-logo {
+  height: 38px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.nav-logo-large {
+  height: 44px;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover, .nav a:focus {
+  border-bottom-color: var(--fawn);
+}
+
+
+/* Container class for consistent layout spacing */
+.container {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+/* Utility spacing classes */
+.section {
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mb-40 { margin-bottom: 40px; }
+
+
+/* Buttons */
+/* .btn {
+  display: inline-block;
+  background: var(--fawn);
+  color: var(--bole);
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+} */
+
+
+/* Cards and content blocks (featured, about, visit) */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 8px solid rgba(0,0,0,0.125);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Images used inside cards */
+.card-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.cards-grid .card .card-image { height: 200px; }
+
+@media (min-width: 700px) {
+  .cards-grid .card .card-image { height: 240px; }
+}
+
+
+/* Grid for featured items ------------------------------------ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.cards-grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make images in the grid fill more of the card and cover */
+.cards-grid .card .card-image {
+  height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cards-grid .card h3 {
+  margin: 12px 0 8px 0;
+}
+
+/* Seasonal full-width card */
+/* .full-width-card { width: 100%; }
+
+.full-width-card .card-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+} */
+
+
+/* Visit grid: details + call-to-action aligned within the card */
+.visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .visit-grid {
+    grid-template-columns: 1fr;
+  }
+  .visit-cta { 
+    text-align: left;
+    margin-top: 12px;
+  }
+}
+
+dl { 
+  font-weight: 700; 
+  margin-top: 0; }
+
+.visit-cta {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.visit-details {
+  text-align: left;
+  border-left: 1px solid rgba(0,0,0,0.06);
+  padding-left: 20px;
+  align-items: flex-start;
+}
+
+.visit-grid > * {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .visit-details { 
+    text-align: left; 
+    border-left: none; 
+    padding-left: 0; }
+
+  .visit-grid > * { 
+    min-height: 0; 
+    align-items: flex-start; 
+  }
+}
+
+.visit-cta .btn { 
+  align-self: flex-start; 
+  width: auto;
+  margin-top: 8px; }
+  
+.visit-cta p, .visit-details p { 
+  margin: 0 0 8px 0; 
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* New CSS specific to About page */
+
+ /* A full-screen background image that remains static when scrolling (due to background-attachment: fixed), creating a parallax-like effect as other elements move on top of it. */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/coffee_blurry_seasonal.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* .about-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; 
+} */
+
+/* Creates a pseudo-element overlay that sits on top of the bottom part of the .about-hero element, adding a fading gradient there to create a smooth transition into the page's background colour. */
+.about-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--khaki) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Semi-transparent container for the Story text that darkens the background image to improve text contrast*/
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 48px;
+  gap: 16px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.45) 100%);
+}
+
+.hero-overlay h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.4rem;
+}
+
+.hero-overlay p {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+/* Inline frame (iframe) container for the embedded Google Maps link */
+.about-iframe {
+              width: 100%; 
+              height: 220px; 
+              border-radius: 12px; 
+              display: flex;
+}
+
+@media (max-width: 800px) {
+  .hero-overlay {
+    padding: 24px;
+  }
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .hero-overlay {
+    padding: 64px;
+  }
+  .hero-overlay h1 {
+    font-size: 2.8rem;
+  }
+}
+
+
