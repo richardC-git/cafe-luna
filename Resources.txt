@@ -2,7 +2,7 @@ Index.html (And style.css)
 
 Resources Used:
 
-www.pexels.com for ALL stock images
+www.pexels.com for all stock images in index.html. AI-generated and Wikimedia Creative Commons licensed images used for images in about.html.
 
 https://www.w3schools.com/css/css3_flexbox.asp
 
@@ -11,6 +11,10 @@ https://www.w3schools.com/css/css_grid.asp
 https://www.w3schools.com/css/css3_mediaqueries.asp
 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Relationship_with_other_layout_methods
+
+developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Introduction
 
 ChatGPT
 Page Structure:
@@ -53,3 +57,5 @@ How can I implement these features without overriding the other CSS in my styles
 What are media queries, what properties and attributes should they include, and how should I use them to ensure my design is responsive to various screen sizes?
 
 How does the ::after pseudo-element work?
+
+What is an iframe and how does it work?
