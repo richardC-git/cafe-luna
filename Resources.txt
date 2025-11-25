@@ -12,6 +12,12 @@ https://www.w3schools.com/css/css3_mediaqueries.asp
 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 
+https://www.w3schools.com/css/css_grid_container.asp
+
+https://www.w3schools.com/css/css3_flexbox_container.asp
+
+https://www.giantfocal.com/march-documentation/margin
+
 ChatGPT
 Page Structure:
     Talk me through what Flex Boxes are.
@@ -19,6 +25,10 @@ Page Structure:
     Talk me through what grid layouts are.
 
     Talk me through what mediaqueries are for.
+
+    How can I ensure consistent spacing on elements?
+
+    What are some example margin classes?    
 
 Logo Generation:
     Can you generate a white on bole(784F41) minimalist latte image to use as a nav bar logo?
@@ -37,3 +47,5 @@ Sanity Check:
     Look over my HTML and CSS to look for any redundancies, broken links.
 
     Complete a validation check to ensure all functionality makes sense.
+
+    Look through my CSS and look for any classes that can be consolidated into less classes, for less clutter.
