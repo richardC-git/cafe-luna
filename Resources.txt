@@ -37,3 +37,19 @@ Sanity Check:
     Look over my HTML and CSS to look for any redundancies, broken links.
 
     Complete a validation check to ensure all functionality makes sense.
+
+About page prompts:
+
+What do about pages for cafes typically look like? What kind of content, theme and tone is typical? What features and functionality is expected? Explain the aesthetic principles and design practices that a web developer designing and implementing an about page for a cafe would implement.
+
+Generate a photorealistic, high resolution image of a coffee cup sitting on a wooden cafe table in extremely shallow focus. In the background, out of focus, the cafe interior can be seen--hanging bulbs, countertops, and glass pane windows. A warm, cozy ambiance pervades the scene. Imagine snowflakes fluttering down and festive wreaths decorating the streets just out of view, beyond the cafe windows. Make the image aspect ratio landscape (19:9).
+
+How can I make the background image static and make the "our story" section transparent so that the text scrolls on top?
+
+How can I add a gradient or fading effect at the bottom of the "our story" section to make the transition to the rest of the page content smoother?
+
+How can I implement these features without overriding the other CSS in my styles.css? (This was before I decided to make a separate about.css file for the about page)
+
+What are media queries, what properties and attributes should they include, and how should I use them to ensure my design is responsive to various screen sizes?
+
+How does the ::after pseudo-element work?

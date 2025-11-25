@@ -115,7 +115,7 @@ header.site-header {
 
 
 /* Buttons */
-.btn {
+/* .btn {
   display: inline-block;
   background: var(--fawn);
   color: var(--bole);
@@ -123,7 +123,7 @@ header.site-header {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-}
+} */
 
 
 /* Cards and content blocks (featured, about, visit) */
@@ -182,7 +182,7 @@ header.site-header {
 }
 
 /* Seasonal full-width card */
-.full-width-card { width: 100%; }
+/* .full-width-card { width: 100%; }
 
 .full-width-card .card-image {
   width: 100%;
@@ -190,7 +190,7 @@ header.site-header {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
-}
+} */
 
 
 /* Visit grid: details + call-to-action aligned within the card */
@@ -254,9 +254,11 @@ dl {
   margin: 0 0 8px 0; 
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* New CSS specific to About page */
 
-.hero-figure {
+ /* A full-screen background image that remains static when scrolling (due to background-attachment: fixed), creating a parallax-like effect as other elements move on top of it. */
+.about-hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -266,14 +268,15 @@ dl {
   background-attachment: fixed;
 }
 
-.hero-figure .hero-image {
+/* .about-hero .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0; 
-}
+} */
 
-.hero-figure::after {
+/* Creates a pseudo-element overlay that sits on top of the bottom part of the .about-hero element, adding a fading gradient there to create a smooth transition into the page's background colour. */
+.about-hero::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -285,6 +288,7 @@ dl {
   pointer-events: none;
 }
 
+/* Semi-transparent container for the Story text that darkens the background image to improve text contrast*/
 .hero-overlay {
   position: absolute;
   inset: 0;
