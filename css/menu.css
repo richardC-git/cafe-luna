@@ -102,28 +102,66 @@ header.site-header {
   padding: 0 16px;
 }
 
-
+/* card for each item */
 .card {
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   border: 8px solid rgba(0,0,0,0.125);  
-  max-width: 300px;
+  max-width: 340px;
+  max-height: 460px;
   margin: auto;
   text-align: center;
   font-family: arial;
   float: left;
-  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   background-color: white;
 }
 
+/* name of itmem */
+.name {
+  font-family: 'Lato', sans-serif;
+}
+
+/* description of item */
+.description {
+  font-family: 'Lato', sans-serif;
+}
+
+/* price of item */
 .price {
   color: gray;
+  font-family: 'Lato', sans-serif;
   font-size: 22px;
 }
 
+/* header of each section */
+header h1 {
+  text-align: left;
+  background-color: #784F41;
+  color: white;
+  width: 50%;
+  border-radius: 0 15px 15px 0px;
+  padding-left: 10px;
+}
+
 .row1::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.row2::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.row3::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.row4::after{
   content: "";
   clear: both;
   display: table;
