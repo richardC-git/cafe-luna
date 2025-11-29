@@ -71,3 +71,9 @@ What are media queries, what properties and attributes should they include, and 
 How does the ::after pseudo-element work?
 
 What is an iframe and how does it work?
+
+Menu promts:
+
+    Can you give me ideas for items on a cafe menu?
+
+    Could you add a brief description about them?
