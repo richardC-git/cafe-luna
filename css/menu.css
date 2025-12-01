@@ -114,13 +114,40 @@ header.site-header {
   margin: auto;
   text-align: center;
   font-family: arial;
+  position: relative;
   float: left;
   margin-bottom: 20px;
   margin-left: 20px;
   background-color: white;
 }
 
-/* name of itmem */
+/* card hover effect */
+.card:hover {
+  transform: translateY(-10px); /* Lift the card */
+  box-shadow: 0 20px 30px rgb(0, 0, 0); /* Increase the shadow */
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #784F41;
+  border-radius: 8px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+/* name of item */
 .name {
   font-family: 'Lato', sans-serif;
 }
@@ -128,6 +155,12 @@ header.site-header {
 /* description of item */
 .description {
   font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* price of item */
@@ -150,22 +183,36 @@ header h1 {
 .row1::after{
   content: "";
   clear: both;
-  display: table;
+  display: flex;
 }
 .row2::after{
   content: "";
   clear: both;
-  display: table;
+  display: flex;
 }
 .row3::after{
   content: "";
   clear: both;
-  display: table;
+  display: flex;
 }
 .row4::after{
   content: "";
   clear: both;
-  display: table;
+  display: flex;
+}
+
+#menuBtn {
+  background-color: #784F41;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
 /* Back to top button */
@@ -185,6 +232,16 @@ header h1 {
   border-radius: 4px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 #myBtn:hover {
   background-color: #555;
+}
+
+img {
+  width: 290px;
+  height: 200px;
 }
