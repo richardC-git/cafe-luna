@@ -140,7 +140,7 @@ header.site-header {
   margin-bottom: 0;
 }
 
-.hero-overlay {
+.hero-overlay { /* darkened overlay on hero image to improve text readability */
   position: absolute;
   inset: 0;
   display: flex;
@@ -165,7 +165,7 @@ header.site-header {
   color: #fff;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) /* to adjust hero image and text based on screen size */ {
   .hero-figure .hero-image { height: 420px; }
   .hero-overlay { padding: 36px; }
   .hero-overlay h1 { font-size: 2.4rem; }
@@ -202,6 +202,8 @@ header.site-header {
 
 
 /* Grid for featured items ------------------------------------ */
+
+/* Cards grid: auto-fit cards to fill available space */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -209,6 +211,7 @@ header.site-header {
   align-items: start;
 }
 
+/* Ensure each card in the grid fills its container and stacks content vertically */
 .cards-grid > * {
   display: flex;
   flex-direction: column;
