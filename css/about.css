@@ -114,17 +114,6 @@ header.site-header {
 .mb-40 { margin-bottom: 40px; }
 
 
-/* Buttons */
-/* .btn {
-  display: inline-block;
-  background: var(--fawn);
-  color: var(--bole);
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-} */
-
 
 /* Cards and content blocks (featured, about, visit) */
 .card {
@@ -180,17 +169,6 @@ header.site-header {
 .cards-grid .card h3 {
   margin: 12px 0 8px 0;
 }
-
-/* Seasonal full-width card */
-/* .full-width-card { width: 100%; }
-
-.full-width-card .card-image {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px;
-} */
 
 
 /* Visit grid: details + call-to-action aligned within the card */
@@ -267,13 +245,6 @@ dl {
   background-position: center;
   background-attachment: fixed;
 }
-
-/* .about-hero .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0; 
-} */
 
 /* Creates a pseudo-element overlay that sits on top of the bottom part of the .about-hero element, adding a fading gradient there to create a smooth transition into the page's background colour. */
 .about-hero::after {
