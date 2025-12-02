@@ -257,6 +257,8 @@ a {
 .slideshow-container {
   position: relative;
   margin: 100%;
+  display: flex;
+  width: 50%;
 }
 
 /* Hide the images by default */
